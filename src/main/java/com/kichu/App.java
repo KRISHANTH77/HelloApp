@@ -3,14 +3,13 @@ package com.kichu;
 public class App {
     public static void main(String[] args) {
 
-        String name;
-
         if (args.length == 0) {
-            name = "World";
+            System.out.println("Hello World");
         } else {
-            name = args[0];
+            for (int i = 0; i < args.length; i++) {
+                System.out.println("Hello " + args[i]);
+            }
         }
 
-        System.out.println("Hello " + name);
     }
 }
